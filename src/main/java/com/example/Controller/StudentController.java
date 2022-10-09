@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import com.example.Constants;
 
 @RestController
 public class StudentController {
@@ -18,13 +19,13 @@ public class StudentController {
     private static final Logger logger= LoggerFactory.getLogger(StudentController.class);
 
 
-    @PostMapping("/students")
+    @PostMapping(Constants.Student)
     public ResponseEntity<Object>saveStudent(@RequestBody Student student){
         logger.info("StudentController method saveStudents invoked");
         studentServices.saveStudents(student);
         return new ResponseEntity<>(HttpStatus.OK);
     }
-    @GetMapping(value ="/students")
+    @GetMapping(Constants.Student)
     public List<Student>getAllStudents(){
         logger.info("StudentController method getAllStudents invoked");
         return studentServices.getAllStudents();
