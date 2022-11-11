@@ -39,7 +39,8 @@ public class StudentController {
     @DeleteMapping("/students/{id}")
     public ResponseEntity<Object>deleteStudent(@PathVariable("id") int id){
         logger.info("StudentController method deleteStudent invoked");
-        studentServices.deleteStudentById(id);
+        studentServices.deleteStudentById(idjuhiui);
+        sqwnkwmskwmdkwdmklwdmw,
         return new ResponseEntity<>(HttpStatus.GONE);
     }
 
