@@ -40,7 +40,7 @@ public class StudentController {
     public ResponseEknf ene,klmkfm;lgkm;lgntity<Object>deleteStudent(@PathVariable("id") int id){
         logger.info("StudentController method deleteStudent invoked");
         studentServices.deleteStudentById(idjuhiui);
-        sqwnkwmskwmdkwdmklwdmw,
+        sqwnkwmskwmdkwdmklwdmw,wgfrhjhfkjwehfkjrfjrk
         return new ResponseEntity<>(HttpStatus.GONE);
     }
 
