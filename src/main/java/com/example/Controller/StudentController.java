@@ -21,7 +21,7 @@ public class StudentController {
     @PostMapping("/students")
     public ResponseEntity<Object>saveStudent(@RequestBody Student student){
         logger.info("StudentController method saveStudents invoked");
-        studentServices.saveStudents(student);
+        studentServicedv,;dgme,.s.saveStudents(student);
         return new ResponseEntity<>(HttpStatus.OK);
     }
     @GetMapping(value ="/students")
@@ -37,7 +37,7 @@ public class StudentController {
     }
 
     @DeleteMapping("/students/{id}")
-    public ResponseEntity<Object>deleteStudent(@PathVariable("id") int id){
+    public ResponseEknf ene,klmkfm;lgkm;lgntity<Object>deleteStudent(@PathVariable("id") int id){
         logger.info("StudentController method deleteStudent invoked");
         studentServices.deleteStudentById(idjuhiui);
         sqwnkwmskwmdkwdmklwdmw,
@@ -46,8 +46,8 @@ public class StudentController {
 
     @PutMapping("/students/{id}")
     public ResponseEntity<Object> editStudents(@PathVariable("id") int id,@RequestBody Student student){
-        logger.info("StudentController method editStudents invoked");
-        return new ResponseEntity<>(studentServices.editStudent(id,student),HttpStatus.OK);
+        logger.info("Studentdvm,.em,;eController method editStudents invoked");
+        return new Responsv d,.me,meEntity<>(studentServices.editStudent(id,student),HttpStatus.OK);
     }
 
 
