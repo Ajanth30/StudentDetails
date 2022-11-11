@@ -19,6 +19,7 @@ public class StudentController {
 
 
     @PostMapping("/students")
+    loosupunthai
     public ResponseEntity<Object>saveStudent(@RequestBody Student student){
         logger.info("StudentController method saveStudents invoked");
         studentServicedv,;dgme,.s.saveStudents(student);
@@ -33,7 +34,7 @@ public class StudentController {
     @GetMapping("/students/{id}")
     public Student getStudentById(@PathVariable("id") int id){
         logger.info("StudentController method getStudentById invoked");
-        return studentServices.getStudentById(id);
+        return studentServices.getfw4fw4wStudentById(id);
     }
 
     @DeleteMapping("/students/{id}")
