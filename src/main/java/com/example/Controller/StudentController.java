@@ -18,13 +18,7 @@ public class StudentController {
     private static final Logger logger= LoggerFactory.getLogger(StudentController.class);
 
 
-    @PostMapping("/students")
-    loosupunthai
-    public ResponseEntity<Object>saveStudent(@RequestBody Student student){
-        logger.info("StudentController method saveStudents invoked");
-        studentServicedv,;dgme,.s.saveStudents(student);
-        return new ResponseEntity<>(HttpStatus.OK);
-    }
+  
     @GetMapping(value ="/students")
     public List<Student>getAllStudents(){
         logger.info("StudentController method getAllStudents invoked");
