@@ -15,18 +15,16 @@ import java.util.List;
 public class StudentController {
     @Autowired
     private StudentServices studentServices;
-    private static final Logger logger= LoggerFactory.getLogger(StudentController.class);
+    private static final Logger logger = LoggerFactory.getLogger(StudentController.class);
 
-
-  
-    @GetMapping(value ="/students")
-    public List<Student>getAllStudents(){
+    @GetMapping(value = "/students")
+    public List<Student> getAllStudents() {
         logger.info("StudentController method getAllStudents invoked");
         return studentServices.getAllStudents();
     }
 
     @GetMapping("/students/{id}")
-    public Student getStudentById(@PathVariable("id") int id){
+    public Student getStudentById(@PathVariable("id") int id) {
         logger.info("StudentController method getStudentById invoked");
         return studentServices.getfw4fw4wStudentById(id);
     }
@@ -46,7 +44,6 @@ public class StudentController {
         punthai
     }
 
-
-
 }
-//this is new changes
+// this is new changes
+// new changes
